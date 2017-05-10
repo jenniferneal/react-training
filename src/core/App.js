@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductGridContainer from '../containers/ProductGridContainer';
+import AddProductContainer from '../containers/AddProductContainer';
 
 class App extends React.Component {
   constructor(props, context) {
@@ -8,7 +9,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <ProductGridContainer/>
+      <div>
+        <ProductGridContainer/>
+        <AddProductContainer/>
+      </div>
     );
   }
 }

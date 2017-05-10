@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles/main.scss';
 
 class Product extends React.Component {
   constructor(props, context) {
@@ -12,7 +13,10 @@ class Product extends React.Component {
       image
     } = this.props;
     return (
-        <div>{title}{desc}{image}</div>
+        <div>
+          <div className={styles.titles+" titles"}>{title}</div>
+          {desc}{image}
+        </div>
     );
   }
 }

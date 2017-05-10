@@ -1,6 +1,7 @@
 import React from 'react';
 import Product from '../components/Product';
 import {connect} from 'react-redux';
+import styles from './styles/main.scss';
 
 class ProductGridContainer extends React.Component {
   constructor(props, context) {
@@ -24,6 +25,7 @@ class ProductGridContainer extends React.Component {
     return (
       <div>
         {products}
+        <div className={styles.titles}>Random Text</div>
       </div>
     );
   }
